@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<div align="center" id="engage"></div>
+<script>
+    var tag = document.createElement('script');
+    tag.src = "//cdnmc1.vod309.com/multichannel/veeva/js/engage/embed-engage.js";
+    var engage = document.getElementById('engage');
+    engage.parentNode.insertBefore(tag, engage.nextSibling);
+
+    var player;
+    function onVeevaEngageReady() {
+        player = new VeevaEngage.initialize('engage', {
+            dns: '//cdnmc1.vod309.com/multichannel/release/engage/index.html',
+            engage: '1XFDrucGEh98IuQaLnrjrtatpkGhkDEAJE%2FI%2FmJ2EaKDMkcru5pBzYF66qS4IiyI1wmqNfJPDlItwvDJsRtLPIdHTKtKBaE4QVQbqexasAekwxQM3qSNMwqf13ummzC%2Bneq0NTiVsPhFKkN4p955LokZ6Pvq2kN1WgOS5RJteoOCidVEPP17GdSiyHmkrrfv%2BPn%2BKKBEBddPmIgDBYHfFlGycQkDkOjFiww6l7DRIt5qLy6QkNKihEQM3FnGOU4ZEGf4RCglRxI%3D',
+            error: 'Content is not available',
+            mc: 'https://mc-01-app-us.veevacrm.com/multichannel',
+            cookie_error: 'Please allow cookies in order to view presentation.',
+            width: '100%',
+            height: '100%'
+        });
+    }
+</script>
+
+</body>
+</html>
